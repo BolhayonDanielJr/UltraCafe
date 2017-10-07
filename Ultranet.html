@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UlTRACAFE</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  .carousel-inner > .item > img,
+ .carousel-inner > .item > a > img {
+     display: block;
+     max-width: 100%;
+     height: 300px !important;
+     </style>
+     <style>
+  body { 
+    background: url('images/bg.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+}
+  </style>
+  
+</head>
+<body style="background-image:url(data:image/jpeg;base64,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)">
+
+
+<nav class="navbar navbar-inverse" style="background-color: rgba(10,50,60,.8);" style="width: 100%;">
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" shape="" href="#">UltraCafe</a>
+    </div>
+    <ul class="nav navbar-nav">
+    <li class="active"><a href="index.html">Home</a></li>
+    <li class="active"><a href="Products & services.html">Products & services</a></li>
+    
+     <li class="active" class="nav-dropdown"><a href="Ultranet.html"><font color="yellow">Ultranet</font></a></li>
+     <li class="active"><a href="contact.html">contact</a></li>
+      
+
+    </ul>
+    <form class="navbar-form navbar-right">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</nav>
+
+
+<header style="clear: left;" style="padding: 1em">
+<div class="container-fluid">
+  <div class="well-fluid" style="background-color: rgba(10,50,60,.8);">
+  
+  <h1 align="center"><strong><font face="Lucida Handwriting " color="yellow"> Ultra Net</font> </strong></h1>
+   <p style="text-align: center;"><font face="cuckoo" color="white">Faster than NASA internet connection </font></p>
+   <nav class="navbar navbar" style="width: 100%;">
+      
+      <ul class="navbar-nav">
+    <li class="active"><a href="Services.html"><font face="courier" color="white" >Services</font></a></li>
+    </ul>
+        
+      
+
+   </nav>
+   </div>
+   </div>
+</header>
+
+
+<div class="container">
+<div class="row">
+  <div class="col-md-6">
+    <div class="col-md-12">
+
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLaDp2g_OZPcbl1Gg6stKuFKADww_LNgypMloGbculRC0fAjxZEQ" style="width: 100%;" class="img-rounded">
+      <hr class="style3" style="height: 10px;  
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;"> 
+     <h1><font face="Lucida Handwriting" color="yellow">Please check our services</font></h1>
+     <p><font color="white">We have a lot of discounts and promos in our computer shop. when you consume 5 hours in playing or surfing other stuff you have a free 1 hour of playing time and a free Hindica Handi Mandi Wooly coffee.</font></p>
+   </div> 
+
+     </div>
+ 
+ <div class="col-md-6">
+ <div class="col-md-12">
+  
+   <h1><font face="Lucida Handwriting" color="yellow">Full acces</font></h1>
+   <h1><font face="Lucida Handwriting" color="yellow">To</font></h1>
+   <h1><font face="Lucida Handwriting" color="yellow">Internet</font></h1>
+     <hr class="style3" style="height: 10px;  
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;">  
+  <h1><font face="Lucida Handwriting" color="yellow">AND..</font></h1>
+   <h1><font face="Lucida Handwriting" color="yellow">Hot coffee :)</font></h1>
+   <hr class="style3" style="height: 10px;  
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;">
+  
+  </div>
+ </div>
+
+
+</div>
+  
+
+    </div>
+
+
+  </div>
+  </div>
+  
+</div>
+
+<footer class="text-center" style="background-color: rgba(10,50,60,.8);">
+      <div class="footer-above">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="footer-col col-md-4">
+              <h3><font face="Lucida Handwriting " color="yellow">Location</font></h3>
+              <p><font face="Lucida Handwriting " color="white">110100100 Baguio City</font>
+                <br><font face="Lucida Handwriting " color="white">Mountain Dew, Holliwood</font></p>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3><font face="Lucida Handwriting " color="yellow">Share this page</font>  </h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="https://facebook.com"><div style="text-align: left;"><img src="https://marketplace.canva.com/MAB0h--l5Ig/1/thumbnail/canva-blue-facebook-logo-social-media-icon-MAB0h--l5Ig.png" target="_blank" class="img-circle" style="width: 30px;"></div>
+                    <i class="fa fa-fw fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="https://goole-plus.com"><img src="http://files.softicons.com/download/social-media-icons/advanced-flat-social-icons-by-uiconstock/png/256x256/google%20plus.png" target="_blank" class="img-circle" style="width: 30px;">
+                    <i class="fa fa-fw fa-google-plus"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="http://twitter.com"><img src="https://seeklogo.com/images/T/twitter-2012-positive-logo-916EDF1309-seeklogo.com.png" target="_blank" class="img-circle" style="width: 30px;">
+                    <i class="fa fa-fw fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social btn-outline" href="#">
+                    <i class="fa fa-fw fa-dribbble"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col col-md-4">
+              <h3><font face="Lucida Handwriting " color="yellow">About UltraCafe</font></h3>
+              <p> 
+                <a href="index.html">Home</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </footer>
+   
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    </div>
+     <div class="container-fluid">
+
+      <div class="footer-well" style="background-color: rgba(10,50,60,.8);" > <h6 style="text-align: center;"><font face="courier " color="white"> Copyright &copy; Your Website 2017</font></h6></div>
+    </div>
+
+
+
+</body>
+</html>

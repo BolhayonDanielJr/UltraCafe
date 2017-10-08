@@ -1,69 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>UlTRACAFE</title>
-<meta charset="utf-8">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style type="text/css">
+  <style>
+  body {
+      position: relative; 
+  }
+  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+  </style>
+   <style type="text/css">
   .carousel-inner > .item > img,
  .carousel-inner > .item > a > img {
      display: block;
      max-width: 100%;
      height: 400px !important;
      </style>
-     <style>
-  body { 
-    background: url('images/bg.png') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin: 0;
-}
-  </style>
+    
 </head>
-<body style="background-image:url(https://i.pinimg.com/736x/c9/e3/b4/c9e3b413bc3b52518630d0ebacb867bf--cute-coffee-shop-best-coffee-shop.jpg)">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-
-<nav class="navbar navbar-inverse" style="background-color: rgba(10,50,60,.8);" style="width: 100%;">
-
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-        <a class="navbar-brand" shape="" href="#">UltraCafe</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="index.html"><font color="yellow">Home</font></a></li>
-
-      <li class="active"><a href="Products & services.html">Products & services</a></li>
-       <li class="active"><a href="Ultranet.html">Ultranet</a></li>
-
-     
-
-      <li class="active"><a href="contact.html">contact</a></li>
-    </ul>
-    <form class="navbar-form navbar-right">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Section 4-1</a></li>
+              <li><a href="#section42">Section 4-2</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+    </div>
   </div>
-</nav>
+</nav>    
 
-
-<header style="clear: left;" style="padding: 1em">
-<div class="container-fluid">
-  <div class="well-fluid" style="background-color: rgba(10,50,60,.8);">
-  <div style="text-align: center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjxGibm3PHuuBCN5BqmhO8EWMSL6IpegIH4irOeV4B1xUghpBS" class="img-circle" width="200" height="80" style="width: 200px"></div>
-  <h1 align="center"><strong><font face="Lucida Handwriting " color="yellow"> Ultra Café</font> </strong></h1>
-   <p style="text-align: center;"><font face="cuckoo" color="white">Great Coffee For Everyone</font></p>
-   </div>
-</header>
-<div class="container-fluid">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%;" >
+<div id="section1" class="container-fluid">
+ <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 100%;" >
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -74,20 +68,20 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4HgnAu3IJw5N4WWwmXQsJq8tM1A-2gXBrVq7rBvwMnI_9CiR0" alt="Cafe" style="width:100%;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIHO924f8by7Wzu14fArz-_mj3Ct5wzcxoZYfrJrEIZsw2AV1BaA" alt="Cafe" style="width:100%;">
       </div>
 
 
       <div class="item">
 
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Pg-NNPcc26D1XYt51iDd-lISAv0OQf5LzogorWHmdRnGsEIV" alt="Cafe" style="width:100%;">  
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQTaPr7KSBBQ9IuVHsaU41iwYPRLzVtZ8SCxk-DBR15QWV-QZv" alt="Cafe" style="width:100%;">  
       </div>
       <div class="carousel-caption">
                               <aside><h3><font face="Lucida Handwriting " color="yellow">4 Musketeers Ultra Cafe</font></h3></aside>  
                             </div>
     
       <div class="item">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhRqTcr6RlSD5WjXFG8lzNQgq3IgpbN9fTPd3UMBiXv8kvJ9i1" alt="Cafe" style="width:100%;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiAzX9t2yxPid67ic3e4nugZ8gGhP819LX1jHyvsjM9m69wH2X" alt="Cafe" style="width:100%;">
       </div>
     </div>
 
@@ -101,120 +95,30 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-<<<<<<< HEAD
+
    </div>
  </div>
- <div class="col-md-6">
-   <div class="col-md-12">
-
-    <h1 style="text-align: center">Welcome to our Cafe</h1>
-    <h3><p>We are proud to advertise our great cafe to the public, in our cafe weve got several product you crave to taste for. One of our blends are coffee lanka talanka blanca it has the aroma of of a morning glory sunshine whole moon that gives you the taste of everlasting satisfaction that feels like sky island endless deliruis craving, in this happiness will forever with you. Also we have our chilling coffee that is irrational because if its element the 100% S.oil, this can't be explaine any further for this is our secret recipe for the coffee named Hindica Handi Mandi woolly this has the the taste of alarming fresh sweet scent of the island zion, its scent will never leave you the scent of undying greatness of nirvana. I think we got the attention of your senses of our lanka talanka blanca and Hindica handi mandi woolly coffee but it is just our sample for you to crave your upshot in our cafe why try to visit and try our best coffee that the world never taste before and experience the relaxation of our cafe with the most fastest internet conncetion faster than NASA for free.</p></h3>
-    <h3><p>This cafe was founded by the most greatest musketers the man who have the greatest mind and unstoppable ideas that the world never Thought. This cafe is the best because of its owner expertise and ability that can make ladies drool over and make man to have mane. ???PEACE??? </p></h3>
-    <p>©©©CrediT©©©</p>
-    <p>:: Osay, Darwin : Valdez, Reign Mark : Bolhayon, Danile Jr. : Cutay, Frederick Harold ::</p>
-=======
-  </div>
-<div class="row">
-  <div class="col-md-6">
-    <div class="col-md-12">
-    <div class="jumbotron-fluid" style="background-color: rgba(10,50,60,.8);" style="padding: 2em;">
-    <h1 style="text-align: center"><font face="Lucida Handwriting " color="yellow">Welcome to our Cafe</font></h1>
-    <hr class="style15" style="border-top: 4px double #8c8b8b;
-  text-align: center;">
-   <p> <font face="Comic Sans MS " color="white">We are proud to advertise our great cafe to the public, in our cafe weve got several product you crave to taste for. One of our blends are coffee lanka talanka blanca it has the aroma of a morning glory sunshine whole moon that gives you the taste of everlasting satisfaction that feels like sky island endless deliruis craving, in this happiness will forever with you. Also we have our chilling coffee that is irrational because if its element the 100% S.oil, this can't be explaine any further for this is our secret recipe for the coffee named Hindica Handi Mandi woolly this has the the taste of alarming fresh sweet scent of the island zion, its scent will never leave you the scent of undying greatness of nirvana. I think we got the attention of your senses of our lanka talanka blanca and Hindica handi mandi woolly coffee but it is just our sample for you to crave your upshot in our cafe why try to visit and try our best coffee that the world never taste before and experience the relaxation of our cafe with the most fastest internet conncetion faster than NASA for free.</p>
-   <p>This cafe was founded by the most greatest musketers the man who have the greatest mind and unstoppable ideas that the world never seen. This cafe is the best because of its owner expertise and ability that can make ladies drool over and make man to have mane. </</p>
-    <p>©©©credit©©©</font></p>
-    <p style="text-align: right;"><font face="Lucida Handwriting " color="white">The four musketers</font></p>
->>>>>>> f1779d024bad01f276172ac9967830c6abd95c7e
-    
-
-
-   </div> 
-
-     </div>
- </div>
- <div class="col-md-6">
- <div class="col-md-12">
-  <div class="jumbotron-fluid" style="background-color: rgba(10,50,60,.8);">
-    <h3 style="text-align: center;"> <font face="Lucida Handwriting " color="yellow">open hours</font></h3>
-    <hr class="style2" style="border-top: 3px double #8c8b8b;">
-    <h4 style="text-align: center;"><font face="Pickwick " color="white">Mon-Sat 8am - 10pm</font></h4>
-    <h4 style="text-align: center;"><font face="Pickwick " color="white">Sun 12pm - 10pm</font></h4>
-    <p style="text-align: center;"><font face="Pickwick " color="white">Come and enjoy</font></p>
-  </div>
-  <div class="jumbotron" style="background-color: rgba(10,50,60,.8);">
-    <h1 style="text-align: center;" ><font face="Lucida Handwriting " color="yellow"> 15 % off</font></h1>
-      <h1 style="text-align: center;" ><font face="Lucida Handwriting " color="yellow"> with STUDENT</font></h1>
-        <h1 style="text-align: center;" ><font face="Lucida Handwriting " color="yellow"> ID</font></h1>
-  </div>
- </div>
 </div>
+<div id="section2" class="container-fluid">
+  <h1>Section 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 </div>
-
-<footer class="text-center" style="background-color: rgba(10,50,60,.8);">
-      <div class="footer-above">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="footer-col col-md-4">
-<<<<<<< HEAD
-              <h3>Location</h3>
-              <p>110100100 Baguio City
-                <br>Mountain Dew, CauliFruit</p>
-=======
-              <h3><font face="Lucida Handwriting " color="yellow">Location</font></h3>
-              <p><font face="Lucida Handwriting " color="white">110100100 Baguio City</font>
-                <br><font face="Lucida Handwriting " color="white">Mountain Dew, Holliwood</font></p>
->>>>>>> f1779d024bad01f276172ac9967830c6abd95c7e
-            </div>
-            <div class="footer-col col-md-4">
-              <h3><font face="Lucida Handwriting " color="yellow">Share this page</font>  </h3>
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="https://facebook.com"><div style="text-align: left;"><img src="https://marketplace.canva.com/MAB0h--l5Ig/1/thumbnail/canva-blue-facebook-logo-social-media-icon-MAB0h--l5Ig.png" target="_blank" class="img-circle" style="width: 30px;"></div>
-                    <i class="fa fa-fw fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="https://goole-plus.com"><img src="http://files.softicons.com/download/social-media-icons/advanced-flat-social-icons-by-uiconstock/png/256x256/google%20plus.png" target="_blank" class="img-circle" style="width: 30px;">
-                    <i class="fa fa-fw fa-google-plus"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="http://twitter.com"><img src="https://seeklogo.com/images/T/twitter-2012-positive-logo-916EDF1309-seeklogo.com.png" target="_blank" class="img-circle" style="width: 30px;">
-                    <i class="fa fa-fw fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-linkedin"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-dribbble"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-col col-md-4">
-              <h3><font face="Lucida Handwriting " color="yellow">About UltraCafe</font></h3>
-              <p> 
-                <a href="index.html">Home</a>.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-     
-    </footer>
-   
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    </div>
-     <div class="container-fluid">
-
-      <div class="footer-well" style="background-color: rgba(10,50,60,.8);" > <h6 style="text-align: center;"><font face="courier " color="white"> Copyright &copy; Your Website 2017</font></h6></div>
-    </div>
-
-
+<div id="section3" class="container-fluid">
+  <h1>Section 3</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section41" class="container-fluid">
+  <h1>Section 4 Submenu 1</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section42" class="container-fluid">
+  <h1>Section 4 Submenu 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
 
 </body>
 </html>
